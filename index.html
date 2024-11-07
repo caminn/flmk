@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mika...</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon 🌻 -->
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla de bienvenida -->
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-message">
+            <p>Hola Mika...</p>
+            <button id="startButton" class="start-button">👋</button>
+        </div>
+    </div>
+
+    <div id="content" style="display: none;">
+        <div id="header">
+            <img id="headerImage" src="images/mika1.png" alt="Imagen inicial" />
+        </div>
+
+        <!-- El botón con el emoji -->
+        <button id="clickButton">🌸</button> 
+
+        <!-- Descripción del botón (debajo del botón ahora) -->
+        <div id="buttonDescription">Clic a la flor</div> 
+
+        <!-- El campo de los poemas -->
+        <div id="poemText"></div>  <!-- Vacío al principio -->
+
+        <!-- Botón Ver de nuevo -->
+        <button id="restartButton" style="display: none;">Ver de nuevo</button>
+    </div>
+
+    <!-- Audio (inicialmente oculto) -->
+    <audio id="backgroundAudio" src="audio/cancion.mp3" preload="auto"></audio>    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Hi Melody', sans-serif;
+    background-image: url('images/fondo.jpg'); /* Fondo de la página */
+    background-size: cover;
+    position: relative;
+}
+
+/* Pantalla de bienvenida */
+.welcome-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer; /* Cambiar cursor para indicar clic */
+}
+
+.welcome-message p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #7f8051;
+    color: rgb(255, 254, 254);
+    border: none;
+    border-radius: 30px; /* Botón redondeado */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.start-button:hover {
+    background-color: #f5dd53; /* Color más oscuro al pasar el mouse */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Estilos del contenido después de mostrar la bienvenida */
+#header img {
+    width: 300px; /* Ajusta el tamaño de la imagen en el encabezado */
+    margin-bottom: 20px;
+}
+
+#clickButton, #restartButton {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50px; /* Redondear bordes */
+    background-color: #f0f0f0;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: all 0.3s ease;
+}
+
+#clickButton:hover, #restartButton:hover {
+    background-color: #d3d3d3;
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+#buttonDescription {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para el poema */
+#poemText {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+}
+
+/* Centrar los botones en la pantalla */
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilo para el botón "Ver de nuevo" */
+#restartButton {
+    position: fixed; /* Fija el botón en una ubicación específica */
+    bottom: 20px; /* A 20px del borde inferior */
+    right: 20px; /* A 20px del borde derecho */
+    padding: 12px 30px;
+    font-size: 22px;
+    font-family: 'Hi Melody', sans-serif; /* Aplicando la misma fuente */
+    background-color: #ff7043; /* Color de fondo más atractivo */
+    color: white;
+    border: none;
+    border-radius: 30px; /* Redondear bordes */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    display: none; /* Inicialmente escondido */
+}
+
+#restartButton:hover {
+    background-color: #ff5722; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de agrandar el botón */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
